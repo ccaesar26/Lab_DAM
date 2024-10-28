@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@color/material_dynamic_neutral10">
+
+    <EditText
+        android:id="@+id/et_username"
+        style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:hint="Type your username"
+        android:textColor="@color/material_dynamic_neutral90"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:hint="Type password"
+        android:textColor="@color/material_dynamic_neutral90"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        style="@style/Widget.Material3.CompoundButton.CheckBox"
+        android:id="@+id/chk_remember"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/material_dynamic_neutral90"
+        android:text="Remember me" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/btn_go_to_register"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Go to Register" />
+    </LinearLayout>
+</LinearLayout>
